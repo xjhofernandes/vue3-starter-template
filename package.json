@@ -11,9 +11,12 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/vue-fontawesome": "^3.0.0-3",
+    "@mdi/font": "^5.8.55",
+    "axios": "^0.21.1",
     "bulma": "^0.9.1",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
+    "vue-axios": "^3.2.0",
     "vue-router": "^4.0.2"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h2 class="subtitle"><font-awesome-icon icon="headset" /></h2>
+        <h2 class="subtitle"><fa-icon icon="headset" /></h2>
         <h1 class="title">Contact</h1>
       </div>
     </div>
@@ -28,6 +28,7 @@ export default {
       HeroNavbarRoutes: [
         { "menu-name": "Home", "route-url": "/" },
         { "menu-name": "Contact", "route-url": "/contact" },
+        { "menu-name": "Bitcoin", "route-url": "/bitcoin" },
       ],
     };
   },
