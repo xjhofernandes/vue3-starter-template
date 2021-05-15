@@ -8,17 +8,16 @@
         </div>
         <div>
             <BruxoIcon class="icon is-large"/>
-            <!-- <img src="@/assets/icons/bruxo.svg" alt="Kiwi standing on oval"> -->
         </div>
           <div class="field is-horizontal">
-            <div class="field-label is-normal">
-              <label class="label is-size-4 has-text-grey-light">Gold</label>
+            <div class="field-label">
+              <label class="is-size-4 has-text-grey-light">Gold</label>
             </div>
             <div class="field-body">
               <div class="field">
                 <div class="control has-icons-right is-inline">
                   <input class="input" type="text" value="1.579.574" readonly>
-                  <MoedaIcon class="icon is-small is-size-7 is-right"/>
+                  <MoedaIcon class="icon is-small is-size-7 is-right mr-2" style="opacity: 0.2;" />
                 </div>
               </div>
             </div>
@@ -38,6 +37,9 @@
       </div>
     </section>
 
+    <section>
+
+    </section>
 
   </div>
 </template>
@@ -54,7 +56,7 @@ export default {
   data() {
     return {
       heroAttributes: [{
-        "Mame": "Anferus",
+        "Name": "Anferus",
         "Class": "Mage",
         "Level": 42,
         "Job": 34,
