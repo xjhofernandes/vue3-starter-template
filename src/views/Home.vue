@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import BruxoIcon from "../assets/icons/coin.svg"
+import BruxoIcon from "../assets/icons/bruxo.svg"
 
 export default {
   components: {
