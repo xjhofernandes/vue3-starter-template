@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container p-5">
     <section>
       <div class="is-flex level">
         <div class="is-flex">
@@ -27,15 +27,9 @@
       <div class="columns">
         <div class="column is-12">
             <table class="table is-fullwidth">
-                <tr>
-                  <th>Name</th>
-                  <th>Class</th>
-                  <th>Level</th>
-                  <th>Job</th>
-                  <th>Power</th>
-                  <th>Magic Power</th>
-                  <th>Defense</th>
-                </tr>
+                <tr style="background-color: #85c1e9;">
+                  <th class="has-text-white" v-for="colunas in Object.keys(heroAttributes[0])" :key="colunas">{{ colunas }}</th>
+                </tr>                
                 <tr v-for="colunas in heroAttributes" :key="colunas">
                   <td v-for="coluna in colunas" :key="coluna"> {{ coluna }}</td>
                 </tr>
@@ -60,13 +54,13 @@ export default {
   data() {
     return {
       heroAttributes: [{
-        "name": "Anferus",
-        "class": "Mage",
-        "level": 42,
-        "job": 34,
-        "power": 17,
-        "magic_power": 70,
-        "defense": 25
+        "Mame": "Anferus",
+        "Class": "Mage",
+        "Level": 42,
+        "Job": 34,
+        "Power": 17,
+        "Magic Power": 70,
+        "Defense": 25
       }],
     };
   },
