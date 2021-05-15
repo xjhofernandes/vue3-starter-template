@@ -3,25 +3,22 @@
     <section>
       <div class="is-flex level">
         <div class="is-flex">
-          <p class="is-size-3">Dashboard:</p>
-          <p class="is-size-5">Charactere Tracking</p>
+          <p class="is-size-4 has-text-white">Dashboard:</p>
+          <p class="ml-4 is-size-4 has-text-grey-light">Character Tracking</p>
         </div>
         <div>
-          <a>
-            <BruxoIcon class="icon" />
-          </a>
+            <BruxoIcon class="icon is-large"/>
+            <!-- <img src="@/assets/icons/bruxo.svg" alt="Kiwi standing on oval"> -->
         </div>
           <div class="field is-horizontal">
             <div class="field-label is-normal">
-              <label class="label">Gold</label>
+              <label class="label is-size-4 has-text-grey-light">Gold</label>
             </div>
             <div class="field-body">
               <div class="field">
-                <div class="control has-icons-right">
+                <div class="control has-icons-right is-inline">
                   <input class="input" type="text" value="1.579.574" readonly>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-check"> teste</i>
-                  </span>                  
+                  <MoedaIcon class="icon is-small is-size-7 is-right"/>
                 </div>
               </div>
             </div>
@@ -52,11 +49,13 @@
 </template>
 
 <script>
-import BruxoIcon from "../assets/icons/bruxo.svg"
+import BruxoIcon from "@/assets/icons/bruxo.svg"
+import MoedaIcon from "@/assets/icons/coin.svg"
 
 export default {
   components: {
-    BruxoIcon
+    BruxoIcon,
+    MoedaIcon
   },
   data() {
     return {
@@ -73,3 +72,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* .default-background-color{
+  color: #has-text-white;
+} */
+</style>
