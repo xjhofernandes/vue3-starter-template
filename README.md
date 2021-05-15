@@ -1,5 +1,5 @@
-# vue3 Starter Template
-Almost minimal Vue 3 template using Vue Router, Bulma and Font Awesome.
+# Vue 3 Starter Template
+Almost minimal Vue 3 template using Vue Router, Vue Axios, Bulma and Font Awesome.
 
 ## Project setup
 ```
@@ -21,7 +21,8 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-[Vue](https://cli.vuejs.org/config/).
-[Bulma](https://bulma.io/documentation/customize/).
-[Font Awesome](https://www.npmjs.com/package/@fortawesome/vue-fontawesome#get-started).
+### Configurations
+-- [Vue](https://cli.vuejs.org/config/)
+-- [Bulma](https://bulma.io/documentation/customize/)
+-- [Font Awesome](https://github.com/FortAwesome/vue-fontawesome)
+-- [Vue Axios](https://github.com/imcvampire/vue-axios#readme)
