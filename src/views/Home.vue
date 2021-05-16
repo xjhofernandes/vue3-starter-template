@@ -59,7 +59,7 @@
         <div class="column is-6">
           <DashboardChart
             :chart_height="550"
-            :chart="trace1"
+            :chart="trace2"
             :xaxis_dtick="10800000"
           />
         </div>
@@ -108,13 +108,33 @@ export default {
             y: [5, 10, 2, 8],
             marker: {
               color: "#85c1e9",
-              line: {
-                width: 2.5,
-              },
             },
           },
         ],
-      },
+      },    
+      trace2: {
+        uuid: "grafico-teste",
+        traces: [
+          {
+            type: "bar",
+            name: 'LA Zoo',
+            x: ['giraffes', 'orangutans', 'monkeys'],
+            y: [20, 14, 23],
+            marker: {
+              color: "#1a5276",
+            },
+          },
+          {
+            type: "bar",
+            name: 'LA Zoo',
+            x: ['giraffes', 'orangutans', 'monkeys'],
+            y: [5, 10, 2],
+            marker: {
+              color: "#85c1e9",
+            },
+          },          
+        ],
+      },        
     };
   },
 };
