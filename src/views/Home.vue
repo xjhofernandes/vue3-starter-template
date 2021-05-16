@@ -52,13 +52,13 @@
     </section>
 
     <section>
-      <div class="columns">
-        <div class="column is-12">
-          <div class="is-flex">
-            <p class="is-size-4 has-text-white">teste:</p>
-            <p class="is-size-4 has-text-grey-light">teste</p>
+      <div class="level mt-5">
+        <div class="is-flex level-item">
+          <p class="is-size-4 has-text-white">teste:</p>
+          <p class="is-size-4 has-text-grey-light">teste</p>
+        </div>
 
-          <div class="dropdown" :class="drop_activate == true ? 'is-active' : ''" @click="drop_activate = !drop_activate">
+          <div class="dropdown level-right" :class="drop_activate == true ? 'is-active' : ''" @click="drop_activate = !drop_activate">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
                 <span>Skill List</span>
@@ -98,9 +98,7 @@
             </div>
           </div>
 
-          </div>
 
-        </div>
       </div>
 
       <div class="columns">
