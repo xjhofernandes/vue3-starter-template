@@ -47,11 +47,30 @@
     </section>
 
     <section>
-      <DashboardChart
-        :chart_height="550"
-        :chart="trace1"
-        :xaxis_dtick="10800000"
-      />
+      <div class="columns">
+        <div class="column is-12">
+          <div class="is-flex">
+            <p class="is-size-4 has-text-white">teste:</p>
+            <p class="is-size-4 has-text-grey-light">teste</p>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-6">
+          <DashboardChart
+            :chart_height="550"
+            :chart="trace1"
+            :xaxis_dtick="10800000"
+          />
+        </div>
+        <div class="column is-6">
+          <DashboardChart
+            :chart_height="550"
+            :chart="trace1"
+            :xaxis_dtick="10800000"
+          />
+        </div>        
+      </div>
     </section>
   </div>
 </template>
@@ -88,7 +107,7 @@ export default {
             x: [1, 2, 3, 4],
             y: [5, 10, 2, 8],
             marker: {
-              color: "#C8A2C8",
+              color: "#85c1e9",
               line: {
                 width: 2.5,
               },
