@@ -7,7 +7,7 @@
           <p class="ml-4 is-size-4 has-text-grey-light">Character Tracking</p>
         </div>
         <div>
-            <BruxoIcon class="icon is-large"/>
+            <BruxoIcon class="icon" style="height: 6rem;width: 6rem;"/>
         </div>
           <div class="field is-horizontal">
             <div class="field-label">
