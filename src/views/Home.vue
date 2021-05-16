@@ -61,9 +61,9 @@
           <div class="dropdown" :class="drop_activate == true ? 'is-active' : ''" @click="drop_activate = !drop_activate">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                <span>Click me</span>
+                <span>Skill List</span>
                 <span class="icon is-small">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  <ArrowIcon aria-hidden="true"/>
                 </span>
               </button>
             </div>
@@ -127,6 +127,7 @@
 <script>
 import BruxoIcon from "@/assets/icons/bruxo.svg";
 import MoedaIcon from "@/assets/icons/coin.svg";
+import ArrowIcon from "@/assets/icons/arrow.svg";
 import DashboardChart from "@/components/DashboardChart.vue";
 
 export default {
@@ -134,6 +135,7 @@ export default {
     BruxoIcon,
     MoedaIcon,
     DashboardChart,
+    ArrowIcon
   },
   data() {
     return {
