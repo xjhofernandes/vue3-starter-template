@@ -97,8 +97,6 @@
               </div>
             </div>
           </div>
-
-
       </div>
 
       <div class="columns">
@@ -118,6 +116,65 @@
         </div>        
       </div>
 
+    </section>
+
+    <section>
+      <div class="level mt-5">
+        <div class="is-flex level-item">
+          <p class="is-size-4 has-text-white">teste:</p>
+          <p class="is-size-4 has-text-grey-light">teste</p>
+        </div>
+
+          <div class="dropdown level-right" :class="drop_activate == true ? 'is-active' : ''" @click="drop_activate = !drop_activate">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                <span>Skill List</span>
+                <span class="icon is-small">
+                  <ArrowIcon aria-hidden="true"/>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item">
+                  Overview
+                </a>
+                <a href="#" class="dropdown-item">
+                  Modifiers
+                </a>
+                <a href="#" class="dropdown-item">
+                  Grid
+                </a>
+                <a href="#" class="dropdown-item">
+                  Form
+                </a>
+                <a href="#" class="dropdown-item">
+                  Elements
+                </a>
+                <a href="#" class="dropdown-item">
+                  Components
+                </a>
+                <a href="#" class="dropdown-item">
+                  Layout
+                </a>
+                <hr class="dropdown-divider">
+                <a href="#" class="dropdown-item">
+                  More
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>   
+
+      <div class="columns">
+        <div class="column is-12">
+          <DashboardChart
+            :chart_height="550"
+            :chart="trace3"
+            :xaxis_dtick="10800000"
+          />          
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -185,7 +242,16 @@ export default {
             },
           },          
         ],
-      },        
+      }, 
+      trace3: {
+        uuid: "bla",
+        traces: [{
+          type: 'bar',
+          x: [20, 14, 23, 32, 45, 66],
+          y: ['giraffes', 'orangutans', 'monkeys', "teste", "teste2", "teste3"],
+          orientation: 'h'}
+        ]
+      }       
     };
   },
 };
