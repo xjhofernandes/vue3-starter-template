@@ -104,6 +104,7 @@ export default {
         traces: [
           {
             type: "bar",
+            name: "grade",
             x: [1, 2, 3, 4],
             y: [5, 10, 2, 8],
             marker: {
