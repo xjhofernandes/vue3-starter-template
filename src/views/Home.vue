@@ -2,17 +2,21 @@
   <div class="container p-5">
     <section>
       <div class="is-flex level">
+
         <div class="is-flex">
           <p class="is-size-4 has-text-white">Dashboard:</p>
           <p class="ml-4 is-size-4 has-text-grey-light">Character Tracking</p>
         </div>
+
         <div>
           <BruxoIcon class="icon" style="height: 6rem; width: 6rem" />
         </div>
+
         <div class="field is-horizontal">
           <div class="field-label">
             <label class="is-size-4 has-text-grey-light">Gold</label>
           </div>
+
           <div class="field-body">
             <div class="field">
               <div class="control has-icons-right is-inline">
@@ -26,8 +30,9 @@
           </div>
         </div>
       </div>
+
       <div class="columns">
-        <div class="column is-12">
+        <div class="column is-12 table-container">
           <table class="table is-fullwidth">
             <tr style="background-color: #85c1e9">
               <th
@@ -52,9 +57,52 @@
           <div class="is-flex">
             <p class="is-size-4 has-text-white">teste:</p>
             <p class="is-size-4 has-text-grey-light">teste</p>
+
+          <div class="dropdown" :class="drop_activate == true ? 'is-active' : ''" @click="drop_activate = !drop_activate">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                <span>Click me</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item">
+                  Overview
+                </a>
+                <a href="#" class="dropdown-item">
+                  Modifiers
+                </a>
+                <a href="#" class="dropdown-item">
+                  Grid
+                </a>
+                <a href="#" class="dropdown-item">
+                  Form
+                </a>
+                <a href="#" class="dropdown-item">
+                  Elements
+                </a>
+                <a href="#" class="dropdown-item">
+                  Components
+                </a>
+                <a href="#" class="dropdown-item">
+                  Layout
+                </a>
+                <hr class="dropdown-divider">
+                <a href="#" class="dropdown-item">
+                  More
+                </a>
+              </div>
+            </div>
           </div>
+
+          </div>
+
         </div>
       </div>
+
       <div class="columns">
         <div class="column is-6">
           <DashboardChart
@@ -71,6 +119,7 @@
           />
         </div>        
       </div>
+
     </section>
   </div>
 </template>
@@ -88,6 +137,7 @@ export default {
   },
   data() {
     return {
+      drop_activate: false,
       heroAttributes: [
         {
           Name: "Anferus",
@@ -118,7 +168,7 @@ export default {
         traces: [
           {
             type: "bar",
-            name: 'LA Zoo',
+            name: 'NA Zoo',
             x: ['giraffes', 'orangutans', 'monkeys'],
             y: [20, 14, 23],
             marker: {
