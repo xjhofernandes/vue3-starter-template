@@ -54,8 +54,8 @@
     <section>
       <div class="level mt-5">
         <div class="is-flex level-item">
-          <p class="is-size-4 has-text-white">teste:</p>
-          <p class="is-size-4 has-text-grey-light">teste</p>
+          <p class="is-size-4 has-text-white">Class Skill:</p>
+          <p class="is-size-4 has-text-grey-light pl-2">Avg Damage</p>
         </div>
 
           <div class="dropdown level-right" :class="drop_activate1 == true ? 'is-active' : ''" @click="drop_activate1 = !drop_activate1">
@@ -117,8 +117,8 @@
     <section>
       <div class="level mt-5">
         <div class="is-flex level-item">
-          <p class="is-size-4 has-text-white">teste:</p>
-          <p class="is-size-4 has-text-grey-light">teste</p>
+          <p class="is-size-4 has-text-white">Damage:</p>
+          <p class="is-size-4 has-text-grey-light pl-2">by Class</p>
         </div>
 
           <div class="dropdown level-right" :class="drop_activate2 == true ? 'is-active' : ''" @click="drop_activate2 = !drop_activate2">
@@ -157,6 +157,15 @@
                 <a href="#" class="dropdown-item">
                   Crusade
                 </a>
+                <a href="#" class="dropdown-item">
+                  Assassin
+                </a>
+                <a href="#" class="dropdown-item">
+                  Rogue
+                </a>
+                <a href="#" class="dropdown-item">
+                  Hunter
+                </a>                                       
               </div>
             </div>
           </div>
@@ -245,7 +254,7 @@ export default {
         traces: [{
           type: 'bar',
           x: [20, 14, 23, 32, 45, 66, 78, 95, 51, 19, 14, 22, 14, 16, 19, 15, 14, 10, 12, 12, 16],
-          y: ['giraffes', 'orangutans', 'monkeys', "teste", "teste2", "teste3", "teste4", "teste5", "teste3", 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          y: ['Novice', 'Swordman', 'Thief', "Archer", "Mage", "Merchant", "Acolyte", "Knight", "Crusader", 'Assassin', 'Rogue', 'Hunter', 'Bard', 'Dancer', 'Wizard', 'Sage', 'Blacksmith', 'Alchemist', 'Priest', 'Monk', 'Lord Knight'],
           orientation: 'h'}
         ]
       }       
