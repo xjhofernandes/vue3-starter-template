@@ -58,7 +58,7 @@
           <p class="is-size-4 has-text-grey-light">teste</p>
         </div>
 
-          <div class="dropdown level-right" :class="drop_activate == true ? 'is-active' : ''" @click="drop_activate = !drop_activate">
+          <div class="dropdown level-right" :class="drop_activate1 == true ? 'is-active' : ''" @click="drop_activate1 = !drop_activate1">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
                 <span>Skill List</span>
@@ -70,34 +70,30 @@
             <div class="dropdown-menu" id="dropdown-menu3" role="menu">
               <div class="dropdown-content">
                 <a href="#" class="dropdown-item">
-                  Overview
+                  Cold Bolt
                 </a>
                 <a href="#" class="dropdown-item">
-                  Modifiers
+                  Fire Ball
                 </a>
                 <a href="#" class="dropdown-item">
-                  Grid
+                  Fire Bolt
                 </a>
                 <a href="#" class="dropdown-item">
-                  Form
+                  Fire Wall
                 </a>
                 <a href="#" class="dropdown-item">
-                  Elements
+                  Frost Driver
                 </a>
                 <a href="#" class="dropdown-item">
-                  Components
+                  Lightning Bolt
                 </a>
                 <a href="#" class="dropdown-item">
-                  Layout
-                </a>
-                <hr class="dropdown-divider">
-                <a href="#" class="dropdown-item">
-                  More
+                  Thunderstorm
                 </a>
               </div>
             </div>
           </div>
-      </div>
+      </div>   
 
       <div class="columns">
         <div class="column is-6">
@@ -125,10 +121,10 @@
           <p class="is-size-4 has-text-grey-light">teste</p>
         </div>
 
-          <div class="dropdown level-right" :class="drop_activate == true ? 'is-active' : ''" @click="drop_activate = !drop_activate">
+          <div class="dropdown level-right" :class="drop_activate2 == true ? 'is-active' : ''" @click="drop_activate2 = !drop_activate2">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                <span>Skill List</span>
+                <span>Classes List</span>
                 <span class="icon is-small">
                   <ArrowIcon aria-hidden="true"/>
                 </span>
@@ -137,29 +133,29 @@
             <div class="dropdown-menu" id="dropdown-menu3" role="menu">
               <div class="dropdown-content">
                 <a href="#" class="dropdown-item">
-                  Overview
+                  Swordman
                 </a>
                 <a href="#" class="dropdown-item">
-                  Modifiers
+                  Thief
                 </a>
                 <a href="#" class="dropdown-item">
-                  Grid
+                  Archer
                 </a>
                 <a href="#" class="dropdown-item">
-                  Form
+                  Mage
                 </a>
                 <a href="#" class="dropdown-item">
-                  Elements
+                  Merchant
                 </a>
                 <a href="#" class="dropdown-item">
-                  Components
-                </a>
-                <a href="#" class="dropdown-item">
-                  Layout
+                  Acolyte
                 </a>
                 <hr class="dropdown-divider">
                 <a href="#" class="dropdown-item">
-                  More
+                  Knight
+                </a>
+                <a href="#" class="dropdown-item">
+                  Crusade
                 </a>
               </div>
             </div>
@@ -194,7 +190,8 @@ export default {
   },
   data() {
     return {
-      drop_activate: false,
+      drop_activate1: false,
+      drop_activate2: false,
       heroAttributes: [
         {
           Name: "Anferus",
@@ -247,8 +244,8 @@ export default {
         uuid: "bla",
         traces: [{
           type: 'bar',
-          x: [20, 14, 23, 32, 45, 66],
-          y: ['giraffes', 'orangutans', 'monkeys', "teste", "teste2", "teste3"],
+          x: [20, 14, 23, 32, 45, 66, 78, 95, 51, 19, 14, 22, 14, 16, 19, 15, 14, 10, 12, 12, 16],
+          y: ['giraffes', 'orangutans', 'monkeys', "teste", "teste2", "teste3", "teste4", "teste5", "teste3", 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
           orientation: 'h'}
         ]
       }       
