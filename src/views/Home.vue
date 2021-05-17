@@ -100,7 +100,6 @@
           <DashboardChart
             :chart_height="550"
             :chart="trace2"
-            :xaxis_dtick="10800000"
             :layout_extra_opts="layoutTrace2"
           />
         </div>
@@ -108,7 +107,6 @@
           <DashboardChart
             :chart_height="550"
             :chart="trace1"
-            :xaxis_dtick="10800000"
             :layout_extra_opts="layoutTrace1"
           />
         </div>        
@@ -216,6 +214,9 @@ export default {
       ],
       layoutTrace1: {
         title: 'Fire Bolt Damage Per Level',
+        margin: {
+          t: 50,
+        },       
       },
       layoutTrace2: {
         yaxis:{
@@ -230,7 +231,11 @@ export default {
           }
         },
         bargap: 0.15,
-        bargroupgap: 0.1
+        bargroupgap: 0.1,
+        barmode: 'group',
+        margin: {
+          l: 50,
+        },        
       },      
       trace1: {
         uuid: "grafico-teste",
