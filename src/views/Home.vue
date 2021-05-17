@@ -101,6 +101,7 @@
             :chart_height="550"
             :chart="trace2"
             :xaxis_dtick="10800000"
+            :layout_extra_opts="layoutTrace2"
           />
         </div>
         <div class="column is-6">
@@ -108,6 +109,7 @@
             :chart_height="550"
             :chart="trace1"
             :xaxis_dtick="10800000"
+            :layout_extra_opts="layoutTrace1"
           />
         </div>        
       </div>
@@ -212,6 +214,24 @@ export default {
           Defense: 25,
         },
       ],
+      layoutTrace1: {
+        title: 'Fire Bolt Damage Per Level',
+      },
+      layoutTrace2: {
+        yaxis:{
+          title: 'Mage vs Wizard Damage',
+          titlefont: {
+            size: 16,
+            color: 'rgb(107, 107, 107)'
+          },
+          tickfont: {
+            size: 14,
+            color: 'rgb(107, 107, 107)'
+          }
+        },
+        bargap: 0.15,
+        bargroupgap: 0.1
+      },      
       trace1: {
         uuid: "grafico-teste",
         traces: [
@@ -225,24 +245,24 @@ export default {
             },
           },
         ],
-      },    
+      },
       trace2: {
         uuid: "grafico-teste",
         traces: [
           {
             type: "bar",
-            name: 'NA Zoo',
-            x: ['giraffes', 'orangutans', 'monkeys'],
-            y: [20, 14, 23],
+            name: 'Mage',
+            x: ['Fire Bolt lv. 5', 'Napalm Beat lv. 10', 'Thunderstorm lv. 10'],
+            y: [67, 42, 70],
             marker: {
               color: "#1a5276",
             },
           },
           {
             type: "bar",
-            name: 'LA Zoo',
-            x: ['giraffes', 'orangutans', 'monkeys'],
-            y: [5, 10, 2],
+            name: 'Wizard',
+            x: ['Fire Bolt lv. 5', 'Napalm Beat lv. 10', 'Thunderstorm lv. 10'],
+            y: [81, 53, 94],
             marker: {
               color: "#85c1e9",
             },
